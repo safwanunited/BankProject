@@ -1,0 +1,14 @@
+<Configuration status="warn" name="MyApp" packages="">
+  <Appenders>
+   <File name="File" fileName="C:/mylogs/mylog.log" append="true">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} [%t] %-5level - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+  </Appenders>
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="File"/>
+    </Root>
+  </Loggers>
+</Configuration>
